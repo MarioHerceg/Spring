@@ -1,0 +1,44 @@
+h2 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    }
+
+li {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    border: 7px outset #5B58A8;
+    border-radius: 11px;
+    text-align: center;
+    list-style: none inside;
+    display: table;
+    padding: 5px;
+    margin: 5px;
+    background: #BED1E0
+    }
+
+li:hover {
+    background: #CCCCCC
+    }
+
+span {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background: #3C4247;
+    color: beige;
+    padding: 7px;
+    margin: -5px;
+    margin-right: 5px;
+    }
+
+button{
+    border: 5px solid #18608E;
+    border-radius: 8px;
+    background: #BACCDB
+}
+label{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+section{
+    background: #BED1E0
+}

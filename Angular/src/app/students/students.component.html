@@ -1,0 +1,47 @@
+<h2>Popis studenata</h2>
+<ul class="students">
+    <li *ngFor="let student of students" 
+    (click)="onSelect(student)" 
+    [class.selected]="student === selectedStudent">
+        <span class="badge" routerLink="/detail/{{student.jmbag}}">{{student.jmbag}} - {{student.numberOfECTS}} ECTS</span>
+        <button (click)="delete(student)">
+            X
+        </button>
+    </li>
+</ul>
+<div>
+    <h3>Unesi novog studenta</h3>
+    <div>
+        <label>Ime:
+            <div>
+                <input #studentFirstName />
+            </div>
+        </label>
+    </div>
+    <div>
+        <label>Prezime:
+            <div>
+                <input #studentLastName />
+            </div>
+        </label>
+    </div>
+    <div>
+        <label>Jmbag:
+            <div>
+                <input #studentJMBAG />
+            </div>
+        </label>
+    </div>
+    <div>
+        <label>Broj ECTS bodova:
+            <div>
+                <input type="number" #studentNumberOfECTS />
+            </div>
+        </label>
+    </div>
+    <button (click)="add(studentFirstName.value, studentLastName.value, studentJMBAG.value,
+        +studentNumberOfECTS.value); studentFirstName.value=''; 
+        studentLastName.value=''; studentJMBAG.value=''; studentNumberOfECTS.value=''">
+        Unesi studenta
+    </button>
+</div>
