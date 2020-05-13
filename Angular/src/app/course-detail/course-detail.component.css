@@ -1,0 +1,13 @@
+h2 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
+    color: #320077;
+    font-weight: 700;
+    font-style: italic;
+    }
+div {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #333333;
+    background: #FFFFFF;
+    text-shadow: 2px 2px 0px #FFFFFF, 4px 3px 0px rgba(0,0,0,0.15);
+    }

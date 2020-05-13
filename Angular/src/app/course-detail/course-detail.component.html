@@ -1,0 +1,7 @@
+<ul class="students">
+    <li *ngFor="let student of students" >
+        <div><span>JMBAG: </span>{{student.jmbag}}</div>
+        <div><span>Broj ECTS bodova: </span>{{student.numberOfECTS}}</div>
+        <div *ngIf="student.tuitionShouldBePaid"> Student treba platiti školarinu. </div>
+    </li>
+</ul>
